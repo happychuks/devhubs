@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
+# DevHubs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DevHubs is a marketplace for developers to showcase and monetize their projects or offer them for free. Consumers can browse, view demos, download free projects, or purchase paid ones. It features a rating system and personalized recommendations.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- User authentication with email/password and OAuth (Google, GitHub)
+- Marketplace for developers to showcase their projects
+- Rating system for projects
+- Search functionality for easy project discovery
+- Responsive design for mobile and desktop users
+- Newsletter subscription form
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Frontend**: React, Vite, TypeScript, TailwindCSS
+- **Backend**: Django Rest Framework (DRF)
+- **Database**: PostgreSQL
+- **Package Manager**: pnpm
+
+## Installation
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [Python](https://www.python.org/downloads/) (v3.8 or higher)
+- [Django](https://www.djangoproject.com/) (v3.2 or higher)
+- [PostgreSQL](https://www.postgresql.org/download/)
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/happychuks/devhubs-frontend.git
+cd devhubs-frontend
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Step 2: Setup frontend
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+pnpm install #if you do no have pnpm, run npm install -g pnpm
+pnpm run dev
 ```
+
+### Step 3: Usage
+- Visit: `http://localhost:5173/`
+
+
+## Contributing
+
+If you want to contribute to this project, please read the [contribution guide](./CONTRIBUTING.md).
+
+### Pull Request Process
+
+- Create a new branch for your feature or fix
+- Submit a pull request with a clear description
+
+## License and Credits
+
+- Licensed under the MIT License - see the [License](./LICENSE) file for details.
+- Uses third-party libraries: React, etc.
+
+Thank you for checking this awesome project out!!!
