@@ -1,27 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <nav className="bg-gray-800 p-4">
-            <div className="container mx-auto flex justify-between items-center flex-wrap">
-                <h1 className="text-white text-2xl font-bold">DevHubs</h1>
-                <div className="hidden md:flex space-x-4"> {/* Hidden on small screens, flex on medium and above */}
-                    {['Home', 'About', 'Services', 'Contact'].map((item) => (
-                        <a
-                            key={item}
-                            href="#"
-                            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded"
-                        >
-                            {item}
-                        </a>
-                    ))}
-                </div>
-                {/* Hamburger icon for mobile */}
-                <div className="md:hidden">
-                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">
-                        ☰
-                    </button>
-                </div>
+        <nav className="flex justify-between items-center bg-gray-800 p-4 text-white">
+            <div className="flex items-center space-x-4">
+                <div className="font-bold text-xl">DevHubs</div>
+                <input
+                    type="text"
+                    placeholder="Search any project"
+                    className="px-3 py-2 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none"
+                />
+            </div>
+            <div className="relative">
+                <button
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="bg-gray-600 rounded-full px-4 py-2 focus:outline-none">
+                    Menu
+                </button>
+                {isOpen && (
+                    <div className="absolute right-0 mt-2 w-48 rounded-full bg-gray-700 shadow-lg">
+                        <Link to="/login" className="block px-4 py-2 text-sm text-white hover:bg-gray-600 rounded-full">
+                            Login
+                        </Link>
+                        <Link to="/signup" className="block px-4 py-2 text-sm text-white hover:bg-gray-600 rounded-full">
+                            Sign Up
+                        </Link>
+                    </div>
+                )}
             </div>
         </nav>
     );

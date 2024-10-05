@@ -1,14 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import LandingPage from './components/LandingPage';
-import './styles/global.css'; // Import global styles
+import HeroSection from './components/HeroSection';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
     return (
-        <div>
-            <Navbar />
-            <LandingPage />
-        </div>
+        <Router>
+            <div>
+                <Navbar />
+                <HeroSection />
+                <Footer />
+            </div>
+        </Router>
     );
 };
 
