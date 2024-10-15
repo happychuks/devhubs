@@ -3,6 +3,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { Button, buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowDownToLine, CheckCircle } from 'lucide-react';
+import ProductReel from '@/components/ProductReel';
 
 const perks = [
   {
@@ -36,6 +37,11 @@ const HomePage = () => {
     </div>
 
     {/* TODO: List of Projects */}
+    <ProductReel
+          query={{ sort: 'desc', limit: 4 }}
+          href='/products?sort=recent'
+          title='Brand new'
+        />
 
     </MaxWidthWrapper>
 
