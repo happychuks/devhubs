@@ -30,7 +30,7 @@ const HomePage = () => {
         <span className='text-blue-600'>awesome projects</span>.</h1>
         <p className='mt-6 text-lg max-w-prose text-muted-foreground'>Welcome to DevHubs. Every project on our platform is verified by our team to ensure our highest quality standards.</p>
         <div className='flex flex-col sm:flex-row gap-4 mt-6'>
-          <Link href='/projects' className={buttonVariants()}>Browse Trending Projects</Link>
+          <Link href='/products' className={buttonVariants()}>Browse Trending Projects</Link>
           <Button variant='ghost'>Our quality promise &rarr;</Button>
         </div>      
     </div>
