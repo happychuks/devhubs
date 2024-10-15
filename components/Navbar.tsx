@@ -4,6 +4,7 @@ import {Icons } from './Icons'
 import NavItems from './NavItems'
 import { buttonVariants } from './ui/button'
 import UserAccountNav from './UserAccountNav'
+import Cart from './Cart'
 
 const Navbar = () => {
 
