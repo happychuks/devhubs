@@ -1,14 +1,12 @@
 "use client";
 
 import { useState } from 'react';
-import Button from '../../components/Button';
+import Button from '../../../components/Button';
 
-const SignupPage = () => {
+const LoginPage = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
-    firstName: '',
-    lastName: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,31 +15,13 @@ const SignupPage = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Submit the signup form to your API
+    // Submit the login form to your API
   };
 
   return (
     <div className="p-4 max-w-lg mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Sign Up</h1>
+      <h1 className="text-2xl font-bold mb-4">Login</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
-        <input
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-          value={formData.firstName}
-          onChange={handleChange}
-          className="block w-full border border-gray-300 p-2 rounded focus:ring-2 focus:ring-blue-500 transition"
-          required
-        />
-        <input
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-          value={formData.lastName}
-          onChange={handleChange}
-          className="block w-full border border-gray-300 p-2 rounded focus:ring-2 focus:ring-blue-500 transition"
-          required
-        />
         <input
           type="email"
           name="email"
@@ -60,10 +40,10 @@ const SignupPage = () => {
           className="block w-full border border-gray-300 p-2 rounded focus:ring-2 focus:ring-blue-500 transition"
           required
         />
-        <Button type="submit">Sign Up</Button>
+        <Button type="submit">Login</Button>
       </form>
     </div>
   );
 };
 
-export default SignupPage;
+export default LoginPage;
