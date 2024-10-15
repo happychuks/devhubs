@@ -1,8 +1,7 @@
-import dotenv from "dotenv"
-import { init } from "next/dist/compiled/webpack/webpack"
-import path from "path"
+import dotenv from 'dotenv'
+import path from 'path'
+import type { InitOptions } from 'payload/config'
 import payload, { Payload } from 'payload'
-import type {InitOptions} from "payload/config"  
 
 dotenv.config({
     path: path.resolve(__dirname, ".env")
