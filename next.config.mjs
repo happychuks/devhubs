@@ -1,15 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        remotePatterns: [
-            {
-                hostname: 'localhost',
-                port: '3000',
-                pathname: '**',
-                protocol: 'http'
-            }
-        ]
-    }
+	images: {
+		remotePatterns: [
+			{
+				protocol: "http",
+				hostname: "localhost",
+			},
+			{
+				protocol: "https",
+				hostname: "devhubs.vercel.app",
+			},
+		],
+	},
 };
 
-export default nextConfig;
+module.exports = nextConfig;
