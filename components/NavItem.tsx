@@ -1,13 +1,13 @@
 'use client'
 
-import { PROJECT_CATEGORIES } from '@/config'
+import { PRODUCT_CATEGORIES } from '@/config'
 import { Button } from './ui/button'
 import { ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 
-type Category = (typeof PROJECT_CATEGORIES)[number]
+type Category = (typeof PRODUCT_CATEGORIES)[number]
 
 interface NavItemProps {
   category: Category
@@ -70,7 +70,7 @@ const NavItem = ({
                       <div className='relative aspect-video overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75'>
                         <Image
                           src={item.imageSrc}
-                          alt='project category image'
+                          alt='product category image'
                           fill
                           className='object-cover object-center'
                         />
@@ -84,7 +84,7 @@ const NavItem = ({
                       <p
                         className='mt-1'
                         aria-hidden='true'>
-                        Browse Project
+                        Shop now
                       </p>
                     </div>
                   ))}

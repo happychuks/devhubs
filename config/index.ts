@@ -1,4 +1,4 @@
-export const PROJECT_CATEGORIES = [
+export const PRODUCT_CATEGORIES = [
     {
       label: 'APIs',
       value: 'apis' as const,

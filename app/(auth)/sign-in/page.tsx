@@ -1,3 +1,4 @@
+
 'use client'
 
 import { Icons } from '@/components/Icons'
@@ -47,7 +48,7 @@ const Page = () => {
   const { mutate: signIn, isLoading } =
     trpc.auth.signIn.useMutation({
       onSuccess: async () => {
-        toast.success('Signed in Successfully!')
+        toast.success('Signed in successfully')
 
         router.refresh()
 
