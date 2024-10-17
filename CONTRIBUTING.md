@@ -4,11 +4,11 @@ You want to contribute to this project, and we're thankful for that ❤. But fir
 
 ## 🤝 How To Contribute
 
-1. [**Fork**](https://github.com/2077-Collective/2077cms.git) the project.
+1. [**Fork**](https://github.com/happychuks/devhubs.git) the project.
 2. Create a new topic branch on your local forked copy.
 3. Before committing any change, ensure that your branch name, commit message, code quality and tests are standard and working.
 4. Push your topic branch up to your fork.
-5. [**Open a Pull Request**](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests) with a clear title and description against the `develop` branch.
+5. [**Open a Pull Request**](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests) with a clear title and description against the `dev` branch.
 
 ## 🆕 Commit Messages
 
