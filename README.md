@@ -1,6 +1,6 @@
 # DevHubs
 
-DevHubs is a marketplace for developers to showcase and monetize their projects or offer them for free. Consumers can browse, view demos, download free projects, or purchase paid ones. It features a rating system and personalized recommendations.
+DevHubs is a marketplace for developers to showcase and monetize their projects or offer them for free. Users can browse, view demos, download free projects, or purchase paid ones. 
 
 ## Table of Contents
 
@@ -8,7 +8,6 @@ DevHubs is a marketplace for developers to showcase and monetize their projects 
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Folder Structure](#folder-structure)
 - [API Endpoints](#api-endpoints)
 - [Contributing](#contributing)
 - [License](#license)
@@ -24,25 +23,25 @@ DevHubs is a marketplace for developers to showcase and monetize their projects 
 
 ## Technologies Used
 
-- **Frontend**: React, Vite, TypeScript, TailwindCSS
-- **Backend**: Django Rest Framework (DRF)
-- **Database**: PostgreSQL
-- **Package Manager**: pnpm
+- **Frontend**: React, TypeScript, TailwindCSS, Shadcn UI
+- **Backend**: Next.js
+- **Database**: PostgreSQL | Prisma | Supabase
+- **Package Manager**: pnpm | yarn | npm
 
 ## Installation
 
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v14 or higher)
-- [Python](https://www.python.org/downloads/) (v3.8 or higher)
-- [Django](https://www.djangoproject.com/) (v3.2 or higher)
-- [PostgreSQL](https://www.postgresql.org/download/)
+- [Next.js](https://nextjs.org/docs/getting-started/installation)
+- [PostgreSQL](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/connect-your-database-typescript-postgresql)
+- [Strip](https://docs.stripe.com/sdks/set-version)
 
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/happychuks/devhubs-frontend.git
-cd devhubs-frontend
+git clone https://github.com/happychuks/devhubs.git
+cd devhubs
 ```
 
 ### Step 2: Setup frontend
@@ -53,7 +52,7 @@ pnpm run dev
 ```
 
 ### Step 3: Usage
-- Visit: `http://localhost:5173/`
+- Visit: `http://localhost:3000/`s
 
 
 ## Contributing
