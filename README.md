@@ -53,7 +53,7 @@ pnpm run dev
 ```
 
 ### Step 3: Usage
-- Visit: `http://localhost:3000/`s
+- Visit: `http://localhost:3000/`
 
 
 ## Contributing
