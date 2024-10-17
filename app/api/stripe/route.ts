@@ -38,8 +38,8 @@ export async function POST(req: Request) {
 
       const { data, error } = await resend.emails.send({
         from: "DevHubs <devhubs@happychuks.tech>",
-        to: [recipientEmail],
-        subject: "Your Product from DevHubs",
+        to: recipientEmail,
+        subject: "Your Project from DevHubs",
         react: ProductEmail({
           link: link as string,
         }),
