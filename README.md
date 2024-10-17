@@ -48,6 +48,7 @@ cd devhubs
 
 ```bash
 pnpm install #if you do no have pnpm, run npm install -g pnpm
+Provide all required environment variable listed in .env.example
 pnpm run dev
 ```
 
