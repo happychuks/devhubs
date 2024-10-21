@@ -82,7 +82,7 @@ export default async function ProductPage({
         <div className="border-t border-gray-200 mt-10 pt-10">
           <div className="grid grid-cols-2 w-full gap-y-3">
             <h3 className="text-sm font-medium text-muted-foreground col-span-1">
-              Released:
+              Uploaded:
             </h3>
             <h3 className="text-sm font-medium col-span-1">
               {new Intl.DateTimeFormat("en-US", {

@@ -26,20 +26,15 @@ export async function POST(req: Request) {
   switch (event.type) {
     case "checkout.session.completed": {
       const session = event.data.object;
+      const recipientEmail = session.customer_details?.email;
 
-      // Extract the recipient's email from the session object
-      const recipientEmail = session.customer_email;
-
-      if (!recipientEmail) {
-        return new Response("Recipient email not found", { status: 400 });
-      }
 
       const link = session.metadata?.link;
 
       const { data, error } = await resend.emails.send({
         from: "DevHubs <devhubs@happychuks.tech>",
-        to: recipientEmail,
-        subject: "Your Project from DevHubs",
+        to: [recipientEmail as string],
+        subject: "Your Product from DevHubs",
         react: ProductEmail({
           link: link as string,
         }),

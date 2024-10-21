@@ -22,10 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
         <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
         <Navbar />
-        {children}
+        <main className="flex-grow mb-20">
+          {children}
+        </main>
         <Toaster richColors theme="light" closeButton />
         <Footer />
       </body>

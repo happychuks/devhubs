@@ -170,7 +170,7 @@ export async function BuyProduct(formData: FormData) {
     },
 
     payment_intent_data: {
-      application_fee_amount: Math.round((data?.price as number) * 100) * 0.1,
+      application_fee_amount: Math.round((data?.price as number) * 100) * 0.1, 
       transfer_data: {
         destination: data?.User?.connectedAccountId as string,
       },
@@ -188,7 +188,7 @@ export async function BuyProduct(formData: FormData) {
   return redirect(session.url as string);
 }
 
-export async function CreateStripeAccoutnLink() {
+export async function CreateStripeAccountLink() {
   const { getUser } = getKindeServerSession();
 
   const user = await getUser();
@@ -222,6 +222,7 @@ export async function CreateStripeAccoutnLink() {
   return redirect(accountLink.url);
 }
 
+// This function is used to get the link for the stripe dashboard
 export async function GetStripeDashboardLink() {
   const { getUser } = getKindeServerSession();
 

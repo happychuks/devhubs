@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { useFormStatus } from "react-dom";
 
-export function Submitbutton({ title }: { title: string }) {
+export function SubmitButton({ title }: { title: string }) {
   const { pending } = useFormStatus();
 
   return (

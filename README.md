@@ -16,10 +16,10 @@ DevHubs is a marketplace for developers to showcase and monetize their projects 
 
 - User authentication with email/password and OAuth (Google, GitHub)
 - Marketplace for developers to showcase their projects
-- Rating system for projects
-- Search functionality for easy project discovery
+- Rating system for projects (In progress)
+- Search functionality for easy project discovery (In progress)
 - Responsive design for mobile and desktop users
-- Newsletter subscription form
+- Newsletter subscription form (In progress)
 
 ## Technologies Used
 
@@ -35,7 +35,7 @@ DevHubs is a marketplace for developers to showcase and monetize their projects 
 - [Node.js](https://nodejs.org/) (v14 or higher)
 - [Next.js](https://nextjs.org/docs/getting-started/installation)
 - [PostgreSQL](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/connect-your-database-typescript-postgresql)
-- [Strip](https://docs.stripe.com/sdks/set-version)
+- [Stripe](https://docs.stripe.com/sdks/set-version)
 
 ### Step 1: Clone the Repository
 
@@ -47,9 +47,10 @@ cd devhubs
 ### Step 2: Setup frontend
 
 ```bash
-pnpm install #if you do no have pnpm, run npm install -g pnpm
-Provide all required environment variable listed in .env.example
-pnpm run dev
+yarn install  #Provide all required environment variable listed in .env.example
+yarn dev
+npx prisma db push #Run on a new terminal for db migration to prisma
+npx prisma studio # Run on a new terminal to open database studio
 ```
 
 ### Step 3: Usage

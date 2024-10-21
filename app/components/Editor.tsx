@@ -24,7 +24,7 @@ export const MenuBar = ({ editor }: { editor: Editor | null }) => {
         }
         type="button"
       >
-        H1
+        h1
       </Button>
 
       <Button
@@ -34,7 +34,7 @@ export const MenuBar = ({ editor }: { editor: Editor | null }) => {
         }
         type="button"
       >
-        H2
+        h2
       </Button>
 
       <Button
@@ -44,7 +44,7 @@ export const MenuBar = ({ editor }: { editor: Editor | null }) => {
         }
         type="button"
       >
-        H3
+        h3
       </Button>
 
       <Button

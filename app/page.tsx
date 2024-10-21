@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className="text-primary">The Hub for Awesome Projects</h1>
         <p className="lg:text-lg text-muted-foreground mx-auto mt-5 w-[90%] font-normal text-base">
         DevHubs is a developer-centric marketplace that allows developers publish, sell, or freely distribute their projects. DevHubs stands out as the premier marketplace for all things related
-          to development, offering an unparalleled platform for developers and other users.
+          to development, offering an unparalleled platform for developers and other techies.
         </p>
       </div>
       <ProductRow category="latest" />

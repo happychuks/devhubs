@@ -19,7 +19,7 @@ import { SelectCategory } from "../SelectCategory";
 import { Textarea } from "@/components/ui/textarea";
 import { TipTapEditor } from "../Editor";
 import { UploadDropzone } from "@/app/lib/uploadthing";
-import { Submitbutton } from "../SubmitButtons";
+import { SubmitButton } from "../SubmitButtons";
 
 export function SellForm() {
   const initalState: State = { message: "", status: undefined };
@@ -150,7 +150,7 @@ export function SellForm() {
         </div>
       </CardContent>
       <CardFooter className="mt-5">
-        <Submitbutton title="Create your Project" />
+        <SubmitButton title="Create your Project" />
       </CardFooter>
     </form>
   );

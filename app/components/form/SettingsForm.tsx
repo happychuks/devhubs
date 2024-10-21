@@ -15,7 +15,7 @@ import { useFormState } from "react-dom";
 import { useEffect } from "react";
 import { toast } from "sonner";
 import { type State, UpdateUserSettings } from "@/app/actions";
-import { Submitbutton } from "../SubmitButtons";
+import { SubmitButton } from "../SubmitButtons";
 
 interface iAppProps {
   firstName: string;
@@ -64,7 +64,7 @@ export function SettingsForm({ email, firstName, lastName }: iAppProps) {
         </div>
       </CardContent>
       <CardFooter>
-        <Submitbutton title="Update your settings" />
+        <SubmitButton title="Update your settings" />
       </CardFooter>
     </form>
   );
