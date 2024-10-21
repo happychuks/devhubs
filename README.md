@@ -1,4 +1,5 @@
-# DevHubs
+![DevHubs](./public/logos/devhubs-logo.png)
+
 
 DevHubs is a marketplace for developers to showcase and monetize their projects or offer them for free. Users can browse, view demos, download free projects, or purchase paid ones. 
 
@@ -8,7 +9,6 @@ DevHubs is a marketplace for developers to showcase and monetize their projects 
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [API Endpoints](#api-endpoints)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -27,6 +27,11 @@ DevHubs is a marketplace for developers to showcase and monetize their projects 
 - **Backend**: Next.js
 - **Database**: PostgreSQL | Prisma | Supabase
 - **Package Manager**: pnpm | yarn | npm
+- **Authentication**: KindeAuth
+- **Payment Provider**: Stripe
+- **File Manager**: Uploadthing
+- **Hosting**: Vercel
+
 
 ## Installation
 
@@ -54,7 +59,22 @@ npx prisma studio # Run on a new terminal to open database studio
 ```
 
 ### Step 3: Usage
-- Visit: `http://localhost:3000/`
+- You can browser through projects on: `http://localhost:3000/`
+
+**Stripe Onboarding**
+- To add your project, setup your stripe profile here first: `http://localhost:3000/billing`
+
+- To pay for a project, use stripe Test details: 
+    - Email: < your email>
+    - Payment method: Card
+    - Card Info: 4242 4242 4242 4242
+    - Exp: 04 / 42
+    - CVC: 424
+    - Full name: < any name>
+    - Country / Region: < any >
+
+
+**Live Demo**: Visit the live project url [here](https://devhubs.vercel.app)
 
 
 ## Contributing
