@@ -14,20 +14,20 @@ export default function ProductEmail({ link }: { link: string }) {
   return (
     <Html>
       <Head />
-      <Preview>Your project is here...</Preview>
+      <Preview>Your Project is here...</Preview>
       <Tailwind>
         <Body className="bg-white font-sans">
           <Container style={container}>
             <Text className="text-2xl font-semibold">Hi techie,</Text>
             <Text className="text-lg text-gray-600">
-              Thank you for buying your project at DevHubs
+              Thank you for buying this awesome project at DevHubs
             </Text>
             <Section className="w-full flex justify-center mt-7">
               <Button
                 href={link}
                 className="text-white bg-blue-500 rounded-lg px-10 py-4"
               >
-                Your Download Link
+                Click here to Download your project
               </Button>
             </Section>
             <Text className="text-lg">

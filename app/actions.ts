@@ -22,7 +22,7 @@ const productSchema = z.object({
   price: z.number().min(0, { message: "The Price has to be 0 or more" }),
   smallDescription: z
     .string()
-    .min(10, { message: "Please summarize your project more" }),
+    .min(10, { message: "The Description has to be a min character length of 10" }),
   description: z.string().min(10, { message: "Description is required" }),
   images: z.array(z.string(), { message: "Images are required" }),
   productFile: z
@@ -170,7 +170,7 @@ export async function BuyProduct(formData: FormData) {
     },
 
     payment_intent_data: {
-      application_fee_amount: Math.round((data?.price as number) * 100) * 0.1, 
+      application_fee_amount: Math.round((data?.price as number) * 100) * 0.1,
       transfer_data: {
         destination: data?.User?.connectedAccountId as string,
       },
@@ -222,7 +222,6 @@ export async function CreateStripeAccountLink() {
   return redirect(accountLink.url);
 }
 
-// This function is used to get the link for the stripe dashboard
 export async function GetStripeDashboardLink() {
   const { getUser } = getKindeServerSession();
 

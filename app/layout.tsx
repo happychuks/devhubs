@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
         <Navbar />
-        <main className="flex-grow mb-20">
+        <main className="flex-grow mb-16">
           {children}
         </main>
         <Toaster richColors theme="light" closeButton />
