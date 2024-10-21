@@ -66,7 +66,7 @@ export async function SellProduct(prevState: any, formData: FormData) {
     const state: State = {
       status: "error",
       errors: validateFields.error.flatten().fieldErrors,
-      message: "Oops, I think there is a mistake with your inputs.",
+      message: "Oops, I think there is a mistake with your entries.",
     };
 
     return state;
@@ -105,7 +105,7 @@ export async function UpdateUserSettings(prevState: any, formData: FormData) {
     const state: State = {
       status: "error",
       errors: validateFields.error.flatten().fieldErrors,
-      message: "Oops, I think there is a mistake with your inputs.",
+      message: "Oops, I think there is a mistake with your entries.",
     };
 
     return state;
@@ -123,7 +123,7 @@ export async function UpdateUserSettings(prevState: any, formData: FormData) {
 
   const state: State = {
     status: "success",
-    message: "Your Settings have been updated",
+    message: "Your Profile have been updated successfully",
   };
 
   return state;

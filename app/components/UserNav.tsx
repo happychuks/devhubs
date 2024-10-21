@@ -22,8 +22,8 @@ export function UserNav({ email, name, userImage }: iAppProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="relative h-10 w-10 rounded-full">
-          <Avatar className="h-10 w-10">
+        <Button variant="outline" className="relative h-10 w-10 rounded-full border border-blue-500">
+          <Avatar className="h-10 w-10 border border-blue-500">
             <AvatarImage src={userImage} alt="User Image" />
             <AvatarFallback>{name.slice(0, 3)}</AvatarFallback>
           </Avatar>
@@ -31,7 +31,7 @@ export function UserNav({ email, name, userImage }: iAppProps) {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="end" forceMount>
         <DropdownMenuLabel className="font-normal">
-          <div className="flex flex-col space-y-1">
+          <div className="flex flex-col space-y-1">          
             <p className="text-sm font-medium leading-none">{name}</p>
             <p className="text-xs leading-none text-muted-foreground">
               {email}
@@ -41,10 +41,10 @@ export function UserNav({ email, name, userImage }: iAppProps) {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem asChild>
-            <Link href="/sell">Sell your Project</Link>
+            <Link href="/sell">Add your Project</Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/settings">Settings</Link>
+            <Link href="/settings">Manage Account</Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
             <Link href="my-projects">My Projects</Link>
@@ -55,7 +55,7 @@ export function UserNav({ email, name, userImage }: iAppProps) {
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
-          <LogoutLink>Log out</LogoutLink>
+          <LogoutLink>Log Out</LogoutLink>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

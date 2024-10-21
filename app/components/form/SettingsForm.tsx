@@ -37,9 +37,9 @@ export function SettingsForm({ email, firstName, lastName }: iAppProps) {
   return (
     <form action={formAction}>
       <CardHeader>
-        <CardTitle>Settings</CardTitle>
+        <CardTitle>Profile</CardTitle>
         <CardDescription>
-          Here you will find settings regarding your account
+          You can update your profile here
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-y-5">
@@ -64,7 +64,7 @@ export function SettingsForm({ email, firstName, lastName }: iAppProps) {
         </div>
       </CardContent>
       <CardFooter>
-        <SubmitButton title="Update your settings" />
+        <SubmitButton title="Update your Profile" />
       </CardFooter>
     </form>
   );
